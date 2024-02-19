@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
-import { within } from '@storybook/testing-library';
+import { within } from '@storybook/test';
 import { RESPONSIVE_STORY } from '../../docs/constants';
 import { CheckboxInput, CheckboxInputProps } from './CheckboxInput';
 

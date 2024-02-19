@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
-import { within } from '@storybook/testing-library';
+import { within } from '@storybook/test';
 import { ComponentStory } from '@storybook/react';
 import { OptionTile, OptionTileProps } from './OptionTile';
 import { Box } from '../Box/Box';

@@ -1,15 +1,17 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react/types-6-0';
-import { within } from '@storybook/testing-library';
+import { within } from '@storybook/test';
+import { Meta, Story } from '@storybook/react';
 import { Button, ButtonProps } from './Button';
 import { BUTTON_SIZES, BUTTON_VARIANTS } from './Button.constants';
 import { Box } from '../Box/Box';
 import { RESPONSIVE_STORY } from '../../docs/constants';
 
-export default {
+const meta: Meta<typeof Button> = {
   title: 'Components/Button/Visual Regression Tests',
   component: Button,
-} as Meta;
+}
+
+export default meta;
 
 const Template: Story<ButtonProps & { showIconButton: boolean; }> = (args, showIconButton) => (
   <Box gap="xl">
