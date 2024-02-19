@@ -71,7 +71,8 @@
         "requireLast": true
       }
     }],
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "react/function-component-definition": "off"
   },
   "settings": {
     "import/parsers": {
