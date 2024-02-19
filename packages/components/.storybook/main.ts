@@ -1,4 +1,4 @@
-import type { StorybookConfig } from "@storybook/react-webpack5";
+import type { StorybookConfig } from "@storybook/react-vite";
 
 import { join, dirname } from "path";
 
@@ -23,7 +23,7 @@ const config: StorybookConfig = {
   ],
 
   framework: {
-    name: getAbsolutePath("@storybook/react-webpack5"),
+    name: getAbsolutePath("@storybook/react-vite"),
     options: {},
   },
 
@@ -33,6 +33,10 @@ const config: StorybookConfig = {
 
   typescript: {
     reactDocgen: "react-docgen-typescript"
-  }
+  },
+
+  core: {
+    builder: '@storybook/builder-vite',
+  },
 };
 export default config;
