@@ -1,15 +1,17 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, StoryFn } from '@storybook/react';
 import { Box } from '../Box/Box';
 import { FONT_COLOR_OPTIONS, FONT_SIZE_OPTIONS } from '../../lib/tokens';
 import { Heading, HeadingProps } from './Heading';
 
-export default {
+const meta: Meta<typeof Heading> =  {
   title: 'Components/Heading/Visual Regression Tests',
   component: Heading,
-} as Meta;
+};
 
-const SizeTemplate: Story<HeadingProps> = args => (
+export default meta;
+
+const SizeTemplate: StoryFn<HeadingProps> = args => (
   <Box>
     {[...FONT_SIZE_OPTIONS].map(size => (
       <Box>
